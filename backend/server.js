@@ -1,34 +1,35 @@
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
 const workoutRoutes = require("./routes/workouts");
 
-// express app
+// EXPRESS APP
 const app = express();
 
-// middleware
+// MIDDLEWARE
 app.use(express.json());
+app.use(cors()); //CORS => CROSS ORIGIN REQUEST SERVICES
+
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
 });
 
-// ROUTES
+// ROUTES/API
 app.use("/api/workouts/", workoutRoutes);
 
 // CONNECT TO MONGODB
 mongoose
   .connect(process.env.MONGODB_URL)
   .then(() => {
-    // listen for request
+    // LISTEN FOR REQUEST
     app.listen(process.env.PORT, () => {
-      console.log("connecting to DB & listening on port ", process.env.PORT);
+      console.log("Connecting to db & listening for Port", process.env.PORT);
     });
   })
   .catch((error) => {
     console.log(error);
   });
 
-// app.listen(process.env.PORT, () => {
-//     console.log("listening on port ", process.env.PORT);
-// })
+
