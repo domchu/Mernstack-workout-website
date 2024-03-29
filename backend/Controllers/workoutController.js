@@ -27,21 +27,21 @@ const createWorkout = async (req, res) => {
   const { load, reps, title } = req.body;
 
   // ERROR HANDLING ON THE EMPTYFIELD
-  let emptyField = [];
+  let emptyFields = [];
 
   if (!title) {
-    emptyField.push("title");
+    emptyFields.push("title");
   }
   if (!load) {
-    emptyField.push("load");
+    emptyFields.push("load");
   }
   if (!reps) {
-    emptyField.push("reps");
+    emptyFields.push("reps");
   }
-  if (emptyField.length > 0) {
+  if (emptyFields.length > 0) {
     return res
       .status(400)
-      .json({ error: "Please fill in all the fields.", emptyField });
+      .json({ error: "Please fill in all the fields.", emptyFields });
   }
 
   // ADD DOCUMENT TO MONGO_DB
