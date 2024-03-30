@@ -30,6 +30,7 @@ userSchema.statics.signup = async function (email, password) {
     throw Error("Password not strong enough");
   }
 
+  // USER
   const exists = await this.findOne({ email });
   if (exists) {
     throw Error("Email alread in use");
@@ -44,6 +45,23 @@ userSchema.statics.signup = async function (email, password) {
   return user;
 };
 
-// 
+// STATIC LOGIN METHOD
+userSchema.statics.login = async function (email, password) {
+  // VALIDATION
+  if (!email || !password) {
+    throw new Error("All fields must be filled");
+  }
+
+  // USER
+  const user = await this.findOne({ email });
+  if (!user) {
+    throw Error("Incorrect Email");
+  }
+  const match = await bcrypt.compare(password, user.password);
+  if (!match) {
+    throw Error("Incorrect Password");
+  }
+  return user;
+};
 
 module.exports = mongoose.model("User", userSchema);
