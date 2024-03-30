@@ -35,7 +35,7 @@ userSchema.statics.signup = async function (email, password) {
     throw Error("Email alread in use");
   }
 
-  // MY PASSWORD
+  // MY PASSWORD+HASH
   const salt = await bcrypt.genSalt(10);
   const hash = await bcrypt.hash(password, salt);
 
@@ -43,5 +43,7 @@ userSchema.statics.signup = async function (email, password) {
 
   return user;
 };
+
+// 
 
 module.exports = mongoose.model("User", userSchema);
