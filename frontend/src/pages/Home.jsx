@@ -15,7 +15,6 @@ const Home = () => {
         // setWorkouts(data);
         dispatch({ type: "SET_WORKOUTS", payload: data });
         // console.log("SET_WORKOUTS", data);
-        // console.log(data);
       }
     };
     fetchWorkouts();
