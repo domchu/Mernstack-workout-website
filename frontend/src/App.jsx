@@ -7,6 +7,7 @@ import Signup from "./pages/Signup";
 import Navbar from "./Components/Navbar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Faq from "./pages/Faq";
 import Error from "./pages/Error";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/faq" element={<Faq />} />
               <Route path="*" element={<Error />} />
             </Routes>
           </div>
