@@ -29,8 +29,14 @@ margin: 0px 15px;
 }
 
 header a{
-  color: #333;
+  /* color: #333; */
+  color: #366ae3;
   text-decoration: none;
+  font-weight: 600;
+}
+header a:hover{
+ 
+  color: var(--error);
 }
 .pages{
   max-width: 1400px;

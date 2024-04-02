@@ -3,6 +3,8 @@ const Workout = require("../models/workoutModel");
 
 // GET ALL WORKOUT
 const getWorkouts = async (req, res) => {
+  // EACH USER
+  // const user_id = req.user._id;
   const workouts = await Workout.find({}).sort({ createdAt: -1 });
   res.status(200).json(workouts);
 };
@@ -46,6 +48,8 @@ const createWorkout = async (req, res) => {
 
   // ADD DOCUMENT TO MONGO_DB
   try {
+    // each user with profile
+    const user_id = req.user._id;
     const workout = await Workout.create({ title, reps, load });
     res.status(200).json(workout);
   } catch (error) {

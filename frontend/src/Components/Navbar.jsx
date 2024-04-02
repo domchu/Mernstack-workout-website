@@ -16,7 +16,7 @@ const Navbar = () => {
       <header>
         <div className="container">
           <Link to="/">
-            <h1>Workout Buddy</h1>
+            <h1>Strengthy</h1>
           </Link>
           <div className="nav-link">
             <Link to="/">Home</Link>
@@ -27,7 +27,7 @@ const Navbar = () => {
           <nav>
             {user && (
               <div>
-                <span style={{ margin: "10px" }}>{user.email}</span>
+                <span style={{ margin: "7px" }}>{user.email}</span>
                 <button className="log-out" onClick={handleLogout}>
                   Log Out
                 </button>

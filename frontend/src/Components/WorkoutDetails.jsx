@@ -1,17 +1,27 @@
 import React from "react";
 import useWorkoutsContext from "../hooks/useWorkoutsContext";
+import { useAuthContext } from "../hooks/useAuthContext";
 // DATE FNS
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 
 const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useWorkoutsContext();
+  const { user } = useAuthContext();
 
   // DELETING WORKOUT FUNCTION
   const handleClick = async () => {
+    if (!user) {
+      // setError("You must be logged in");
+      return;
+    }
+
     const response = await fetch(
       "http://localhost:4000/api/workouts/" + workout._id,
       {
         method: "DELETE",
+        headers: {
+          authorization: `Bearer ${user.token}`,
+        },
       }
     );
     const deleteData = await response.json();
