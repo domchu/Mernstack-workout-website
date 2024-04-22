@@ -17,9 +17,8 @@ const Home = () => {
       });
       const data = await response.json();
       if (response.ok) {
-        // setWorkouts(data);
         dispatch({ type: "SET_WORKOUTS", payload: data });
-        // console.log("SET_WORKOUTS", data);
+        // setWorkouts(data);
       }
     };
     if (user) {

@@ -20,11 +20,16 @@ const Navbar = () => {
           </Link>
           <div className="nav-link">
             <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/page">Pages</Link>
+            <Link to="/classes">Classes</Link>
+            <Link to="/contact">Contact Us</Link>
             <Link to="/faq">Faq</Link>
           </div>
           <nav>
+            <Link to="/bookclasses" className="book-classes">
+              Book Classes
+            </Link>
             {user && (
               <div>
                 <span style={{ margin: "7px" }}>{user.email}</span>

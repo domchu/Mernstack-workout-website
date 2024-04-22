@@ -29,8 +29,6 @@ const WorkoutForm = () => {
     });
 
     const json = await response.json();
-    // console.log(json);
-    // console.log(response);
     if (!response.ok) {
       setError(json.error);
       setEmptyFields(json.emptyFields);
@@ -43,7 +41,6 @@ const WorkoutForm = () => {
       emptyFields([]);
       dispatch({ type: "CREATE_WORKOUT", payload: json });
       // console.log("new workout added", json);
-      // console.log(json);
     }
   };
 

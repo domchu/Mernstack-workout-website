@@ -17,7 +17,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// ROUTES/API
+// API ROUTE   
 app.use("/api/workouts/", workoutRoutes);
 
 // USER ROUTE

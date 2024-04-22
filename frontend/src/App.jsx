@@ -7,8 +7,11 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Navbar from "./Components/Navbar";
 import About from "./pages/About";
+import Page from "./pages/Page";
+import Classes from "./pages/Classes";
 import Contact from "./pages/Contact";
 import Faq from "./pages/Faq";
+import BookClasses from "./pages/BookClasses";
 import Error from "./pages/Error";
 
 function App() {
@@ -34,8 +37,11 @@ function App() {
                 element={!user ? <Signup /> : <Navigate to="/" />}
               />
               <Route path="/about" element={<About />} />
+              <Route path="/page" element={<Page />} />
+              <Route path="/classes" element={<Classes />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/faq" element={<Faq />} />
+              <Route path="/bookclasses" element={<BookClasses />} />
               <Route path="*" element={<Error />} />
             </Routes>
           </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useLogin } from "../hooks/useLogin";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -13,12 +14,13 @@ const Login = () => {
   };
   return (
     <form className="login" onSubmit={handleLogin}>
-      <h3>Login </h3>
+      <h3 className="auth-title">Login </h3>
 
       <label>Email:</label>
       <input
         type="email"
         className=""
+        // placeholder="Enter Your Email Address"
         onChange={(e) => setEmail(e.target.value)}
         value={email}
       />
@@ -26,11 +28,22 @@ const Login = () => {
       <input
         type="password"
         className=""
+        // placeholder="Password"
         onChange={(e) => setPassword(e.target.value)}
         value={password}
       />
+
       <button disabled={isLoading}>Login </button>
       {error && <div className="error">{error}</div>}
+
+      <div className="forget-password">
+        <Link to="/" className="password">
+          Forget Password?
+        </Link>
+        <Link to="/signup" className="create">
+          Create new account
+        </Link>
+      </div>
     </form>
   );
 };
