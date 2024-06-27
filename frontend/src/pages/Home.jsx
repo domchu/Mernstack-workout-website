@@ -3,6 +3,7 @@ import WorkoutDetails from "../Components/WorkoutDetails";
 import WorkoutForm from "../Components/WorkoutForm";
 import useWorkoutsContext from "../hooks/useWorkoutsContext";
 import { useAuthContext } from "./../hooks/useAuthContext";
+import Footer from "../Components/footer/Footer";
 
 const Home = () => {
   const { workouts, dispatch } = useWorkoutsContext();
@@ -37,6 +38,7 @@ const Home = () => {
         </div>
         <WorkoutForm />
       </div>
+      <Footer />
     </>
   );
 };

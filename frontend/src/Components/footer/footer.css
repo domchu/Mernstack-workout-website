@@ -10,6 +10,9 @@
     color: #bcbcbc;
     margin-bottom: 2rem;
     margin-top: 1rem;
+    font-family: Lato, sans-serif;
+    text-transform: capitalize;
+    font-size: 1.3rem;
 }
 
 .call{
