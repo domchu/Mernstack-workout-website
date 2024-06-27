@@ -10,12 +10,12 @@
   --lightgrey:#cbd1dc;
 
 
---primary-text-color:#fff;
+    --primary-text-color:#fff;
     --paragraph-color: #6a6a6a;
     --heading-color: #1d2229;
     --secondary-color: #524ff5;
     --primary-color: #a1f65e;
-    --white: white;
+    --white: #ffffff;
     --grey-background-color: #f0f0f0;
     --background-black-color: #2c323a;
 }
@@ -54,12 +54,12 @@ flex: 1 1 auto;
 
 header a{
 font-size:1.2rem;
-  color: #366ae3;
+color: var(--paragraph-color);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 header a:hover{
-  color: var(--primary-blue);
+  color: var(--secondary-color);
 }
 /* .pages{ */
   /* max-width: 1400px; */
@@ -74,7 +74,7 @@ header a:hover{
   gap: 100px;
 }
 .workout-details {
-  background: #fff;
+  background: var(--white);
   border-radius: 4px;
   margin: 20px auto;
   padding: 20px;
@@ -116,9 +116,9 @@ input {
   box-sizing: border-box;
 }
 form button {
-  background: var(--primary);
+  background: var(--background-black-color);
   border: 0;
-  color: #fff;
+  color: var(--white);
   padding: 10px;
   font-family: "Poppins";
   border-radius: 4px;
@@ -184,30 +184,37 @@ button{
 }
 .book-classes:hover{
   background-color:#fff;
-  color:#366ae3;
-  border:1px solid #366ae3;
+  color:var(--secondary-color);
+  border:1px solid var(--secondary-color);
 }
 .forget-password{
   display:flex;
   justify-content: space-between;
-  margin-top:15px;
- 
-  /* color:var(--primary-blue); */
- 
+  margin-top:15px; 
 }
 .create{
-  color:#366ae3;
+  color:var(--heading-color);
   font-size:1.05rem;
   font-weight:500;
   text-decoration:underline;
-  
+}
+.create:hover{
+  color: var(--secondary-color);
 }
 .password{
-  color:#366ae3;
+  color:var(--heading-color);
   text-decoration:none;
   font-weight:400;
 }
+.password:hover{
+  color: var(--secondary-color);
+
+}
 .auth-title{
   text-align:center;
-  color:#366ae3;
+  color:var(--heading-color);
+  margin-bottom: 2rem;
+}
+label{
+  font-weight: 600;
 }

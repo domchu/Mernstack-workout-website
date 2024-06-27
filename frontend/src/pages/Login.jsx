@@ -16,13 +16,13 @@ const Login = () => {
   return (
     <>
       <form className="login" onSubmit={handleLogin}>
-        <h3 className="auth-title">Login </h3>
+        <h3 className="auth-title">Login Credentials</h3>
 
         <label>Email:</label>
         <input
           type="email"
           className=""
-          // placeholder="Enter Your Email Address"
+          placeholder="Enter Your Email Address"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
@@ -30,7 +30,7 @@ const Login = () => {
         <input
           type="password"
           className=""
-          // placeholder="Password"
+          placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
           value={password}
         />

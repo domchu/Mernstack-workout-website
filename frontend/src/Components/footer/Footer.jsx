@@ -4,6 +4,7 @@ import Logo from "../../assets/strengthy-footer-logo.svg";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -91,6 +92,9 @@ const Footer = () => {
               </a>
               <a href="/">
                 <FaTwitter />
+              </a>
+              <a href="/">
+                <FaLinkedin />
               </a>
             </div>
             <hr />

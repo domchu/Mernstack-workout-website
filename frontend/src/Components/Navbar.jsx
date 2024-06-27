@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useLogout } from "../hooks/useLogout";
 import { useAuthContext } from "../hooks/useAuthContext";
+// import BrandLogo from "../assets/Strengthy-brand-logo.svg";
+import BrandLogo from "../assets/strengthy-brand-logo.svg"
 
 const Navbar = () => {
   const { logout } = useLogout();
@@ -16,7 +18,8 @@ const Navbar = () => {
       <header>
         <div className="container">
           <Link to="/">
-            <h1>Strengthy</h1>
+            <img src={BrandLogo} alt="Brand Logo" />
+            {/* <h1>Strengthy</h1> */}
           </Link>
           <div className="nav-link">
             <Link to="/">Home</Link>

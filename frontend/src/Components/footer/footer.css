@@ -81,6 +81,9 @@ hr{
     transition: color .2s;
     display: block;
 }
+.footer-page-link:hover{
+    color: var(--primary-color);
+}
 .copyright{
     color: var(--paragraph-color);
     font-family: Lato, sans-serif;
