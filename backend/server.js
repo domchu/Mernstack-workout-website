@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const workoutRoutes = require("./routes/workouts");
+const userRoutes = require("./routes/user");
 
 // EXPRESS APP
 const app = express();
@@ -16,8 +17,11 @@ app.use((req, res, next) => {
   next();
 });
 
-// ROUTES/API
+// API ROUTE   
 app.use("/api/workouts/", workoutRoutes);
+
+// USER ROUTE
+app.use("/api/user/", userRoutes);
 
 // CONNECT TO MONGODB
 mongoose
