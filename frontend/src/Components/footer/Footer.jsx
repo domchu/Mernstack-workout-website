@@ -16,8 +16,8 @@ const Footer = () => {
             </a>
             <div className="footer-text">
               <p>
-                Intelligent, Inspiring And Led By The Best Instructors, <br /> A
-                Huge Range Of Classes That Make Fitness Fun.
+                Intelligent, Inspiring And Led By The Best Instructors,
+                <br />A Huge Range Of Classes That Make Fitness Fun.
               </p>
             </div>
             <div className="call">
@@ -35,18 +35,36 @@ const Footer = () => {
           <div className="footer-center">
             <h4>Utility Pages</h4>
             <div className="footer-text">
-              <ul>
+              <ul className="footer-menu">
                 <li>
-                  <a href="/">Book Classes</a>
+                  <a href="/" className="footer-page-link">
+                    Book Classes
+                  </a>
                 </li>
                 <li>
-                  <a href="/">About Us</a>
+                  <a href="/" className="footer-page-link">
+                    About Us
+                  </a>
                 </li>
                 <li>
-                  <a href="/">Contact Us</a>
+                  <a href="/" className="footer-page-link">
+                    Free Sign Up
+                  </a>
                 </li>
                 <li>
-                  <a href="/">FAQ</a>
+                  <a href="/" className="footer-page-link">
+                    Blog Post
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="footer-page-link">
+                    FAQ
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="footer-page-link">
+                    Contact Us
+                  </a>
                 </li>
               </ul>
             </div>
@@ -54,7 +72,12 @@ const Footer = () => {
           <div className="footer-right">
             <h4>Newsletter</h4>
             <div className="footer-text">
-              <input type="text" name="" placeholder="Enter your Email" />
+              <input
+                type="text"
+                name=""
+                placeholder="Enter your Email"
+                className="footer-input"
+              />
               <div className="subscribe">
                 <button type="submit">Subscribe</button>
               </div>
@@ -73,7 +96,7 @@ const Footer = () => {
             <hr />
           </div>
         </div>
-        <p>
+        <p className="copyright">
           Copyright &copy; Strengthy | Designed by Afoliba | Powered By Mr
           Dominic
         </p>

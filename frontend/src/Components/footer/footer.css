@@ -4,20 +4,14 @@
     background-color: var(--heading-color);
     padding: 5rem 0;
     width: 100%;
-    /* color: var(--primary-text-clr); */
 }
-footer p{
-        color: var(--paragraph-color);
-        /* margin-bottom: 10px; */
-        font-family: Lato, sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        text-align: center;
-        padding: 1rem 0;
+
+.footer-text p{
+    color: #bcbcbc;
+    margin-bottom: 1rem;
 }
 .footer-text{
-    color: var(--primary-text-color);
-    padding: 1.6rem 0;
+
 }
 .call{
     background-color: var(--background-black-color);
@@ -30,8 +24,65 @@ footer p{
     padding: 20px 0;
 }
 .call-tel h5{
-    color: var(--white);
+    color: #bcbcbc;
     white-space: 1.5px;
     font-size: 1.2rem;
     font-weight: 500;
+}
+.footer-center h4, .footer-right h4{
+    color: var(--white);
+    font-size: 1.6rem;
+}
+.subscribe button {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.subscribe button:hover{
+    background-color: transparent;
+    color: var(--white);
+}
+hr{
+    background-color: #485059;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+}
+.social-media-link a{
+    padding-top: 10px;
+    padding-right: 20px;
+    color: var(--white);
+    font-size: 1.6rem;
+}
+.footer-input{
+    background-color: var(--background-black-color);
+    color: #bcbcbc;
+    border: 1px solid #485059;
+    width: 100%;
+    min-height: 65px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    font-family: Lato, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.footer-page-link {
+    color: #bcbcbc;
+    padding-bottom: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color .2s;
+    display: block;
+}
+.copyright{
+    color: var(--paragraph-color);
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 0;
 }
