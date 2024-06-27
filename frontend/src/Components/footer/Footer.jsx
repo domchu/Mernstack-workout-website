@@ -1,21 +1,35 @@
 import React from "react";
-import "./footer.css";
-import Logo from "../../assets/strengthy-brand/logo.png";
+import "./Footer.css";
+import Logo from "../../assets/strengthy-footer-logo.svg";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
-const footer = () => {
+const Footer = () => {
   return (
     <>
       <footer>
         <div className="footer-container">
           <div className="footer-left">
             <a href="/">
-              <img src={Logo} alt="" />
+              <img src={Logo} alt="Brand Logo" />
             </a>
             <div className="footer-text">
               <p>
-                Intelligent, Inspiring And Led By The Best Instructors, A Huge
-                Range Of Classes That Make Fitness Fun.
+                Intelligent, Inspiring And Led By The Best Instructors, <br /> A
+                Huge Range Of Classes That Make Fitness Fun.
               </p>
+            </div>
+            <div className="call">
+              <div className="call-tel">
+                <h3>Call:</h3>
+                <h5>01234 987654</h5>
+                <h5>01234 987654</h5>
+              </div>
+              <div className="call-tel">
+                <h3>Mail:</h3>
+                <h5>contact@strengthy.com</h5>
+              </div>
             </div>
           </div>
           <div className="footer-center">
@@ -47,21 +61,25 @@ const footer = () => {
             </div>
             <div className="social-media-link">
               <a href="/">
-                <i className="fa fa-facebook"></i>
+                <FaFacebook />
               </a>
               <a href="/">
-                <i className="fa fa-instagram"></i>
+                <FaInstagram />
               </a>
               <a href="/">
-                <i className="fa fa-twitter"></i>
+                <FaTwitter />
               </a>
             </div>
             <hr />
           </div>
         </div>
+        <p>
+          Copyright &copy; Strengthy | Designed by Afoliba | Powered By Mr
+          Dominic
+        </p>
       </footer>
     </>
   );
 };
 
-export default footer;
+export default Footer;

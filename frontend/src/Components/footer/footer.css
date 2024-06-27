@@ -1,0 +1,37 @@
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--heading-color);
+    padding: 5rem 0;
+    width: 100%;
+    /* color: var(--primary-text-clr); */
+}
+footer p{
+        color: var(--paragraph-color);
+        /* margin-bottom: 10px; */
+        font-family: Lato, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        padding: 1rem 0;
+}
+.footer-text{
+    color: var(--primary-text-color);
+    padding: 1.6rem 0;
+}
+.call{
+    background-color: var(--background-black-color);
+    padding: 1rem 1.7rem;
+}
+.call-tel h3{
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.call-tel h5{
+    color: var(--white);
+    white-space: 1.5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}

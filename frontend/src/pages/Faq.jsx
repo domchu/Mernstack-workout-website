@@ -1,9 +1,10 @@
 import React from "react";
+import Footer from "../Components/footer/Footer";
 
 const Faq = () => {
   return (
     <>
-      <h1>Faq</h1>
+      <Footer />
     </>
   );
 };

@@ -9,19 +9,24 @@
   --secondary: #4689ef;
   --lightgrey:#cbd1dc;
 
-  /* --primary-color: #232946;
-  --text-color: #FFFFFE;
-  --natural-color: #000000;
-  --secondary-color: #EEBBC3;
-  --secondary-text:#B8C1EC;
-  --error:#e7195a; */
+
+--primary-text-color:#fff;
+    --paragraph-color: #6a6a6a;
+    --heading-color: #1d2229;
+    --secondary-color: #524ff5;
+    --primary-color: #a1f65e;
+    --white: white;
+    --grey-background-color: #f0f0f0;
+    --background-black-color: #2c323a;
 }
+
 
 *{
   margin:0px;
   padding:0px;
   list-style-type:none;
   text-decoration:none;
+  box-sizing: border-box;
 }
 body{
   margin: 0;
@@ -35,9 +40,9 @@ header{
   background-color: #fff;
 }
 header .container{
-  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 10px 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,11 +61,11 @@ font-size:1.2rem;
 header a:hover{
   color: var(--primary-blue);
 }
-.pages{
-  max-width: 1400px;
-  padding: 20px;
-  margin: 0 auto;
-}
+/* .pages{ */
+  /* max-width: 1400px; */
+  /* padding: 20px; */
+  /* margin: 0 auto; */
+/* } */
 
 /* HOME PAGE */
 .home {
