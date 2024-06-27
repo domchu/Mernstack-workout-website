@@ -31,4 +31,3 @@ export const useSignup = () => {
   return { signup, isLoading, error };
 };
 
-// export default useSignup;

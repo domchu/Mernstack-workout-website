@@ -6,9 +6,15 @@
  --natural-yellow:#FBA834;
  --light-green:#50C4ED;
   --primary: #186ceb;
-  --error:#e7195a;
   --secondary: #4689ef;
   --lightgrey:#cbd1dc;
+
+  /* --primary-color: #232946;
+  --text-color: #FFFFFE;
+  --natural-color: #000000;
+  --secondary-color: #EEBBC3;
+  --secondary-text:#B8C1EC;
+  --error:#e7195a; */
 }
 
 *{
@@ -38,6 +44,7 @@ header .container{
 }
 .nav-link a{
 margin: 0px 15px;
+flex: 1 1 auto;
 }
 
 header a{
@@ -132,6 +139,8 @@ input.error{
 nav{
   display: flex;
   align-items: center;
+  padding: 1rem 5px;
+
 }
 nav a{
   margin-left: 10px;
@@ -171,6 +180,7 @@ button{
 .book-classes:hover{
   background-color:#fff;
   color:#366ae3;
+  border:1px solid #366ae3;
 }
 .forget-password{
   display:flex;

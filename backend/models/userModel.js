@@ -33,7 +33,7 @@ userSchema.statics.signup = async function (email, password) {
   // USER
   const exists = await this.findOne({ email });
   if (exists) {
-    throw Error("Email alread in use");
+    throw Error("Email alread in used");
   }
 
   // MY PASSWORD+HASH

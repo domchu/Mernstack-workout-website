@@ -9,18 +9,18 @@ const Signup = () => {
 
   const handleSignup = async (e) => {
     e.preventDefault();
-    await signup(email, password);
+    await signup(email, password, name);
   };
   return (
     <form className="signup" onSubmit={handleSignup}>
       <h3 className="auth-title">Sign Up</h3>
 
-      {/* <label>Name:</label>
+      <label>Name:</label>
       <input
         type="text"
         onChange={(e) => setName(e.target.value)}
         value={name}
-      /> */}
+      />
       <label>Email:</label>
       <input
         type="email"
