@@ -1,9 +1,12 @@
 import react from "react";
+import Banner from "../Components/Banner/Banner";
+import allBannerImage from '../assets/allBanner.jpg';
+
 
 const BookClasses = () => {
   return (
     <>
-      <h1>Book Classes</h1>
+      <Banner image={allBannerImage} text='Book Classes' />
     </>
   );
 };

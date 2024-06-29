@@ -1,9 +1,13 @@
 import React from "react";
+import Banner from "../Components/Banner/Banner";
+import allBannerImage from '../assets/allBanner.jpg';
+
+
 
 const Faq = () => {
   return (
     <>
-      <h1>Faq</h1>
+      <Banner image={allBannerImage} text='FAQ' />
     </>
   );
 };
