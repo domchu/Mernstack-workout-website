@@ -38,32 +38,35 @@ const Footer = () => {
             <div className="footer-text">
               <ul className="footer-menu">
                 <li>
-                  <a href="/" className="footer-page-link">
+                  <a href="/classes" className="footer-page-link">
                     Book Classes
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="footer-page-link">
+                  <a href="/about" className="footer-page-link">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="footer-page-link">
+                  <a href="signup" className="footer-page-link">
                     Free Sign Up
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="footer-page-link">
+                  <a
+                    href="https://www.strengthy.com/blog"
+                    className="footer-page-link"
+                  >
                     Blog Post
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="footer-page-link">
+                  <a href="faq" className="footer-page-link">
                     FAQ
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="footer-page-link">
+                  <a href="contact" className="footer-page-link">
                     Contact Us
                   </a>
                 </li>
@@ -86,16 +89,16 @@ const Footer = () => {
               </div>
             </div>
             <div className="social-media-link">
-              <a href="/">
+              <a href="https://www.facebook.com/strengthy">
                 <FaFacebook />
               </a>
-              <a href="/">
+              <a href="https://www.instagram.com/strengthy">
                 <FaInstagram />
               </a>
-              <a href="/">
+              <a href="https://www.x.com/strengthy">
                 <FaTwitter />
               </a>
-              <a href="/">
+              <a href="https://www.linkedin.com/strengthy">
                 <FaLinkedin />
               </a>
             </div>
