@@ -1,9 +1,11 @@
-import react from "react";
+import react from 'react';
+import Banner from '../Components/Banner/Banner';
+import allBannerImage from '../assets/allBanner.jpg';
 
 const Classes = () => {
   return (
     <>
-      <h1>Classes</h1>
+      <Banner image={allBannerImage} text='Classes' />
     </>
   );
 };

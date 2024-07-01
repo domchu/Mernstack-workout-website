@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react';
+import Banner from '../Components/Banner/Banner';
+import allBannerImage from '../assets/allBanner.jpg';
 
 const Contact = () => {
   return (
     <>
-      <h2>Contact</h2>
+      <Banner image={allBannerImage} text='Contact Us' />
     </>
   );
 };

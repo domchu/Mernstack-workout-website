@@ -1,0 +1,143 @@
+:root {
+  --paragraph-color: #6a6a6a;
+  --heading-color: #1d2229;
+  --secondary-color: #524ff5;
+  --primary-color: #a1f65e;
+  --white: white;
+  --grey-background-color: #f0f0f0;
+  --background-black-color: #2c323a;
+}
+body {
+  letter-spacing: 0.02em;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.about-banner-section{
+    position: relative;
+}
+.about-banner-cont {
+  background-color: var(--heading-color);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.banner-text-wrap {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+}
+
+.about-banner-text {
+  z-index: 2;
+  color: var(--white);
+  text-transform: capitalize;
+  font-size: 80px;
+  line-height: 1.3;
+  display: block;
+  position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  .about-banner-text {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 786px) {
+  .about-banner-text {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .about-banner-text {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 357px) {
+  .banner-text {
+    font-size: 25px;
+  }
+}
+
+.about-intro-section {
+  padding-bottom: 0;
+  position: relative;
+}
+
+
+.container {
+  max-width: 100%;
+
+}
+.w-container {
+  max-width: 100%;
+
+}
+
+
+.about-intro-wrap {
+  background-color: var(--white);
+  width: 80%;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  position: absolute;
+  top: -100px;
+  left: 7%;
+}
+
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+.about-intro-image-wrap-one{
+    width: 100%;
+    height: 536px;
+}
+.about-intro-image-wrap-two{
+    width: 100%;
+    grid-area: 1/2/span 1/span 2;
+    height: 536px;
+
+}
+.about-intro-image-wrap-one img,.about-intro-image-wrap-two img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:878px) {
+.about-intro-wrap{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+}
+@media screen and (max-width:705px) {
+    .about-intro-wrap{
+        padding: 40px 0px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:475px) {
+.w-layout-grid{
+  display: flex;
+  flex-direction: column;
+}
+}
