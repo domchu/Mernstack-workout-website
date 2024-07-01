@@ -80,7 +80,9 @@ const Footer = () => {
                 className="footer-input"
               />
               <div className="subscribe">
-                <button type="submit">Subscribe</button>
+                <a href="#">
+                  <button type="submit">Subscribe</button>
+                </a>
               </div>
             </div>
             <div className="social-media-link">
